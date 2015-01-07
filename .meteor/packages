@@ -11,5 +11,6 @@ sacha:spin
 accounts-password
 audit-argument-checks
 mongo-livedata
-accounts-ui
 tigeroid:errors
+accounts-github
+accounts-ui
