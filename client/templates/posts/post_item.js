@@ -1,5 +1,5 @@
 var POST_HEIGHT = 80;
-var Positions = new. Meteor.Collection(null);
+var Positions = new Meteor.Collection(null);
 
 Template.postItem.helpers({
 	ownPost: function() {
@@ -20,6 +20,7 @@ Template.postItem.helpers({
 			return 'disabled';
 		}
 	},
+	
 	attributes: function() {
 		var post = _.extend({}, Positions.findOne({postId: this._id}), this);
 		var newPosition = post._rank * POST_HEIGHT;
